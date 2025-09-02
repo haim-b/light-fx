@@ -1,0 +1,32 @@
+name: "Light FX"
+version: "1.0.0"
+slug: "light-fx"
+description: "WLED-like effects for any Home Assistant light"
+url: "https://github.com/yourusername/ha-addons/tree/main/light-fx"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+startup: application
+boot: auto
+homeassistant_api: true
+host_network: false
+init: false
+options:
+  sequences: []
+  update_frequency: 20
+  default_transition: 0.1
+schema:
+  sequences:
+    - name: str
+      lights:
+        - str
+      default_effect: str?
+      default_speed: int(1,100)?
+      color_correction:
+        gamma: float?
+        temperature: int?
+  update_frequency: int(1,60)
+  default_transition: float(0,5)
