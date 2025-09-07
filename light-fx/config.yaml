@@ -2,7 +2,7 @@ name: "Light FX"
 version: "1.0.0"
 slug: "light-fx"
 description: "WLED-like effects for any Home Assistant light"
-url: "https://github.com/yourusername/ha-addons/tree/main/light-fx"
+url: "https://github.com/haim-b/light-fx/tree/main/light-fx"
 arch:
   - armhf
   - armv7
